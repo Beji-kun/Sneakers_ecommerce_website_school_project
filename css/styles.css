@@ -976,12 +976,12 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
-.btn-cart-hole{
-    text-align: left;
+.btn-cart-hole {
+  text-align: left;
 }
 .btn-cart {
-    padding: 0 3rem;
-  }
+  padding: 0 3rem;
+}
 @media only screen and (max-width: 567px) {
   .cart-info p {
     display: none;
