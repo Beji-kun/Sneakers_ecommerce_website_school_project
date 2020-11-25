@@ -177,6 +177,7 @@ li {
 
   .menu.show {
     left: 0;
+    background-color: var(--grey2);
   }
 
   .top-nav {
@@ -225,6 +226,7 @@ li {
     flex-direction: column;
     align-items: center;
     padding: 1rem 1.6rem;
+    color: #fff;
   }
 
   body.show::before {
