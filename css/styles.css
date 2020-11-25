@@ -91,7 +91,7 @@ li {
 .header {
   position: relative;
   width: 100%;
-  min-height: 97vh;
+  min-height: 5vh;
   background-color: var(--grey-alt);
   overflow: hidden;
 }
@@ -264,14 +264,14 @@ li {
 /* Hero */
 @media only screen and (max-width: 996px) {
   .header {
-    min-height: 70vh;
+    min-height: 5vh;
   }
   }
 
 
 @media only screen and (max-width: 768px) {
   .header {
-    min-height: 100vh;
+    min-height: 5vh;
   }
 }
 
