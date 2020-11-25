@@ -247,38 +247,8 @@ li {
   }
 }
 
-/* Hero */
-.header .hero-img {
-  position: absolute;
-  height: 80%;
-  padding-left: 30%;
-  object-fit: contain;
-}
 
-.hero-content {
-  position: absolute;
-  top: 50%;
-  transform: translate(25%, -50%);
-}
 
-.hero-content h2 {
-  color: var(--red);
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.hero-content .discount {
-  color: var(--black);
-}
-
-.hero-content h1 span {
-  color: #253b70;
-  font-size: 6rem;
-  font-weight: 700;
-  display: block;
-  line-height: 1;
-}
 
 .btn {
   text-align: center;
@@ -291,74 +261,17 @@ li {
   margin-top: 3rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .header .hero-img {
-    right: 5%;
-    width: 90%;
-  }
-
-  .hero-content {
-    transform: translate(20%, -50%);
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content h1 span {
-    font-size: 5rem;
-  }
-}
-
+/* Hero */
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 70vh;
   }
-  .hero-content h1 span {
-    padding: 0 0 1rem 0;
   }
 
-  .header .hero-img {
-    height: 50rem;
-    right: 5%;
-    top: 25%;
-    padding-left: 40rem;
-  }
-}
 
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 768px) {
   .header {
     min-height: 100vh;
-  }
-
-  .header .hero-img {
-    padding: 0.2vh;
-    margin-right: 15%;
-    margin-top: -40%;
-  }
-
-  .hero-content {
-    margin-top: 60%;
-    top: 40%;
-    transform: translate(15%, -50%);
-  }
-
-  .header .hero-img {
-    right: 0%;
-  }
-
-  .hero-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero-content h1 span {
-    font-size: 4rem;
-    font-size: 3.5rem;
-    padding: 0 0 1rem 0;
-  }
-
-  .hero-content a {
-    padding: 1rem 3rem;
   }
 }
 
@@ -584,10 +497,6 @@ li {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-}
-
-.product-banner .content .discount {
-  color: #b888ff;
 }
 
 .product-banner .content h1 span {
@@ -994,7 +903,7 @@ th:last-child {
 .btn-cart {
   padding: 0 3rem;
 }
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 768px) {
   .cart-info p {
     display: none;
   }
