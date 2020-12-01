@@ -306,9 +306,6 @@ li {
   font-size: 1.2rem;
 }
 
-.banner-text strong font{
-  color: #00473eea;
-}
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 5vh;
@@ -395,6 +392,9 @@ li {
 .advert-box .content h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
+  color: var(--red);
+  font-weight: bolder;
+  
 }
 
 /* Featured Products */
@@ -870,7 +870,9 @@ form span {
 .pagination {
   padding: 2rem 0 2rem 0;
 }
-
+.pagination-container{
+  padding: 0 3.5rem;
+}
 .pagination span {
   display: inline-block;
   padding: 1rem 1.5rem;
@@ -888,7 +890,7 @@ form span {
   color: var(--black);
 }
 
-/* Cart Items */
+/* Cart Items and table*/
 .cart {
   margin: 10rem auto;
 }
@@ -947,18 +949,12 @@ td img {
   max-width: auto;
 }
 
-td:last-child {
+td{
   text-align: right;
 }
 
-th:last-child {
+th {
   text-align: right;
-}
-.btn-cart-hole {
-  text-align: left;
-}
-.btn-cart {
-  padding: 0 3rem;
 }
 @media only screen and (max-width: 768px) {
   .cart-info p {
