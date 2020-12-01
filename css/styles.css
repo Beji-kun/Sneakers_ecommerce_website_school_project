@@ -114,7 +114,7 @@ li {
 .nav.fix-nav .logo,
 .nav.fix-nav .cart-icon,
 .nav.fix-nav .hamburger {
-  color: #fff;
+  color: var(--white);
 }
 
 .navigation {
@@ -189,11 +189,11 @@ li {
   }
 
   .top-nav .logo {
-    color: #fff;
+    color: var(--white);
   }
 
   .top-nav .close {
-    color: #fff;
+    color: var(--white);
     font-size: 3rem;
     padding: 1rem;
     cursor: pointer;
@@ -219,14 +219,14 @@ li {
   }
 
   .nav.fix-nav .nav-link {
-    color: white;
+    color: var(--white);
   }
 
   .nav-list {
     flex-direction: column;
     align-items: center;
     padding: 1rem 1.6rem;
-    color: #fff;
+    color: var(--white);
   }
 
   body.show::before {
@@ -266,7 +266,7 @@ li {
 /* Hero */
 .banner-box{
   width:100%;
-   height: 40vh;
+  height: 50vh;
   margin: 20px 0px;
   display: flex;
   justify-content: center;
@@ -300,43 +300,50 @@ li {
 
 .banner-text span{
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: .8rem;
   font-weight: 500;
-  color: #666666;
+  color: #525252;
   font-size: 1.2rem;
 }
 
-.banner-btn{
-  width:170px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #0b9d8a;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 14px;
-}
 .banner-text strong font{
-  color: #0b9d8a;
+  color: #00473eea;
 }
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 5vh;
+  } 
+  .banner-text strong{
+    font-size: 2rem;
+    line-height: 40px;
   }
+  .banner-text span{
+    font-size: 0.9rem;
   }
-
+  .banner-box{
+    height: 45vh;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .header {
     min-height: 5vh;
   }
+  .banner-text span{
+    font-size: 0.8rem;
+  }
+  .banner-box{
+    height: 30vh;
+  }
+  .banner-text strong{
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
 }
 
 /* Adverts */
 .section {
-  padding: 2rem 0 2rem 0;
+  padding: 1.5rem .5rem 0;
 }
 
 .advert-center {
@@ -347,7 +354,8 @@ li {
 
 .advert-box {
   position: relative;
-  color: #fff;
+  background-color: var(--white);
+  color: var(--black);
   height: 27rem;
   border-radius: 1rem;
   padding: 1.6rem;
@@ -363,18 +371,6 @@ li {
   z-index: -1;
 }
 
-.advert-box:nth-child(1) {
-  background-color: #f5c5d1;
-}
-
-.advert-box:nth-child(2) {
-  background-color: #a1d1df;
-}
-
-.advert-box:nth-child(3) {
-  background-color: #e5bc00;
-}
-
 .advert-box .dotted {
   position: relative;
   height: 100%;
@@ -387,11 +383,6 @@ li {
   top: 50%;
   right: 5%;
   transform: translate(0, -50%);
-}
-
-.advert-box .content h2,
-.advert-box .content h4 {
-  text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
 }
 
 .advert-box .content h2 {
@@ -436,7 +427,8 @@ li {
 .product-center {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 7rem 3rem;
+  gap: 2rem 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .product {
@@ -507,7 +499,7 @@ li {
 }
 
 .product-header .icons span {
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 2.5rem;
   display: block;
   border-radius: 1rem;
@@ -518,7 +510,7 @@ li {
 }
 
 .product-header .icons span i {
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .product-header .icons span:not(:last-child) {
@@ -527,7 +519,7 @@ li {
 
 .product-header .icons span:hover {
   background-color: var(--grey2);
-  color: #fff;
+  color: var(--white);
 }
 
 .product:hover .icons {
@@ -552,14 +544,14 @@ li {
 }
 
 .product-banner .content h2 {
-  color: #fbb419;
+  color: var(--yellow);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .product-banner .content h1 span {
-  color: #fff;
+  color: var(--white);
   font-size: 6rem;
   font-weight: 700;
   display: block;
@@ -725,7 +717,7 @@ li {
   .product-detail .thumbnail {
     width: auto;
     height: 10rem;
-    background-color: #f6f2f1;
+    background-color: var(--white);
     text-align: center;
     padding: 0.5rem;
   }
@@ -770,6 +762,12 @@ li {
 
 .brand img {
   object-fit: contain;
+  filter: opacity(60%);
+  -webkit-filter: opacity(60%);
+}
+.brand img:hover{
+  filter: opacity(100%);
+  -webkit-filter: opacity(100%);
 }
 
 @media only screen and (max-width: 768px) {
@@ -798,7 +796,7 @@ li {
 .footer-center a:link,
 .footer-center a:visited {
   display: block;
-  color: #f1f1f1;
+  color: var(--white);
   font-size: 1.4rem;
   transition: 0.6s;
 }
@@ -808,7 +806,7 @@ li {
 }
 
 .footer-center div {
-  color: #f1f1f1;
+  color: var(--white);
   font-size: 1.4rem;
 }
 
