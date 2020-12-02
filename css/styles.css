@@ -526,7 +526,7 @@ li {
   padding: 1.5rem 1.6rem;
   line-height: 2rem;
   cursor: pointer;
-  transition: all 200ms;
+  transition: all 600ms;
 }
 
 .product-header .icons span i {
