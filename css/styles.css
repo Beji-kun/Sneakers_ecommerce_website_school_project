@@ -252,7 +252,7 @@ li {
   }
 }
 
-/* button */
+/* Button */
 .btn-cart {
   background-color: var(--black);
   color: var(--white);
@@ -264,6 +264,22 @@ li {
   position: relative;
 }
 .btn-cart:hover{
+  color: var(--red);
+}
+
+.banner-btn{
+  width:170px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 14px;
+}
+.banner-btn:hover{
   color: var(--red);
 }
 
@@ -308,21 +324,6 @@ li {
   font-weight: 500;
   color: #271414;
   font-size: 1.2rem;
-}
-.banner-btn{
-  width:170px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:var(--white);
-    background-color: var(--black);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 14px;
-}
-.banner-btn:hover{
-  color: var(--red);
 }
 
 @media only screen and (max-width: 996px) {
@@ -795,7 +796,7 @@ li {
   }
 }
 
-/* ========= Footer ======== */
+/* Footer */
 .footer {
   background-color: var(--black);
   padding: 6rem 1rem;
