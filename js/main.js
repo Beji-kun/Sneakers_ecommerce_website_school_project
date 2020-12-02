@@ -2,6 +2,7 @@ const menu = document.querySelector(".menu");
 const navOpen = document.querySelector(".hamburger");
 const navClose = document.querySelector(".close");
 
+//Open nav
 const navLeft = menu.getBoundingClientRect().left;
 navOpen.addEventListener("click", () => {
   if (navLeft < 0) {
@@ -10,7 +11,7 @@ navOpen.addEventListener("click", () => {
     navBar.classList.add("show");
   }
 });
-
+//Close nav
 navClose.addEventListener("click", () => {
   if (navLeft < 0) {
     menu.classList.remove("show");
@@ -18,7 +19,6 @@ navClose.addEventListener("click", () => {
     navBar.classList.remove("show");
   }
 });
-
 // Fixed Nav
 const navBar = document.querySelector(".nav");
 const navHeight = navBar.getBoundingClientRect().height;
