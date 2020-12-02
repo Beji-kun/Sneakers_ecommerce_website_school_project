@@ -530,7 +530,7 @@ li {
 }
 
 .product-header .icons span i {
-  transition: all 250ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 .product-header .icons span:not(:last-child) {
