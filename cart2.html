@@ -64,111 +64,90 @@
 
   <!-- Cart Items -->
   <div class="title">
-    <h1>Cart</h1>
+    <h1>Cart - Shipping information 1/2</h1>
   </div>
   <div class="container-md cart">
-    <table>
-      <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr>
-    </table>
-
-    <div class="total-price">
-      <table>
-        <tr>
-          <td>Subtotal</td>
-          <td>1200 EUR</td>
-        </tr>
-        <tr>
-          <td>Delivery</td>
-          <td>10 EUR</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>1250 EUR</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <a href="cart2.html" class="btn-cart">Continue</a></td>
-        </tr>
-      </table>      
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Adress</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">City</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Post Code</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Czech Republic</option>
+            <option value="canada">Slovakia</option>
+            <option value="usa">Polish</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Delivery</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">PPL</option>
+            <option value="canada">DHL</option>
+            <option value="usa">Czech Post</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Information for the trader</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <a href="cart3.html" class="btn-cart">Continue</a>
+      </div>
+      </form>
+   
     </div>
-    </div>
-
+<!--
+    <input type="submit" value="Submit" class="btn-cart">-->
  <!-- Footer -->
   <footer id="footer" class="section footer">
     <div class="container">

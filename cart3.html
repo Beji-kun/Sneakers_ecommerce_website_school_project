@@ -64,111 +64,63 @@
 
   <!-- Cart Items -->
   <div class="title">
-    <h1>Cart</h1>
+    <h1>Cart - payments 2/2</h1>
   </div>
   <div class="container-md cart">
-    <table>
-      <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr><tr>
-        <td>
-          <div class="cart-info">
-            <img src="./images/pic1.png" alt="">
-            <div>
-              <p>Nike Sneakers</p>
-              <span>Price: 129 EUR</span>
-              <br />
-              <a href="#">remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>129 EUR</td>
-      </tr>
-    </table>
-
-    <div class="total-price">
-      <table>
-        <tr>
-          <td>Subtotal</td>
-          <td>1200 EUR</td>
-        </tr>
-        <tr>
-          <td>Delivery</td>
-          <td>10 EUR</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>1250 EUR</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <a href="cart2.html" class="btn-cart">Continue</a></td>
-        </tr>
-      </table>      
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Card type</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">VISA</option>
+            <option value="canada">Master card</option>
+            <option value="usa">American express</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">CVV / CVR</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Adresss</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Post code</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <a href="cart3.html" class="btn-cart">Finish payment</a>
+      </div>
+      </form>
+   
     </div>
-    </div>
-
+<!--
+    <input type="submit" value="Submit" class="btn-cart">-->
  <!-- Footer -->
   <footer id="footer" class="section footer">
     <div class="container">

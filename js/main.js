@@ -9,7 +9,7 @@ navOpen.addEventListener("click", () => {
     document.body.classList.add("show");
     navBar.classList.add("show");
   }
-})
+});
 
 navClose.addEventListener("click", () => {
   if (navLeft < 0) {
@@ -17,7 +17,7 @@ navClose.addEventListener("click", () => {
     document.body.classList.remove("show");
     navBar.classList.remove("show");
   }
-})
+});
 
 // Fixed Nav
 const navBar = document.querySelector(".nav");
@@ -29,4 +29,4 @@ window.addEventListener("scroll", () => {
   } else {
     navBar.classList.remove("fix-nav");
   }
-})
+});
